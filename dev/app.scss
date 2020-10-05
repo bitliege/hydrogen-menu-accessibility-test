@@ -1,0 +1,36 @@
+@use "../node_modules/@hydrogen-design-system/system/dist/import/core/defaults" with (
+    $font-sans: canada-type-gibson,
+    $gray: rgba(200, 200, 200, 1),
+    $theme-color-2: #8E42FF,
+    $menu-bg-color: rgba(10, 10, 20, .7),
+    $menu-divider-color: black,
+    $padding: 1.5rem,
+    $margin: 1.5rem
+);
+@use "../node_modules/@hydrogen-design-system/system/dist/import/h2-system.scss";
+
+[data-h2-menu-wrapper] [data-h2-mobile-menu-trigger] {
+    border-radius: 5px 5px 0 0;
+}
+
+[data-h2-core][data-h2-props] h1, h2 {
+    line-height: 1 !important;
+}
+
+.hero-icon {
+    animation: spin 2s linear infinite;
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    width: 10rem;
+}
+
+@keyframes spin {
+    from {
+      transform: translate(-50%, 50%) rotate(0);
+    }
+    to {
+      transform: translate(-50%, 50%) rotate(360deg);
+    }
+  }
