@@ -2,8 +2,20 @@
 
 "use strict";
 
+// URL Subdirectory ============================================================
+// This variable is designed to allow for proper relative links when publishing to a subdirectory or Github Pages. If you plan on publishing to Github Pages, set this variable to the name of your repository.
+
+let urlPrefix = "hydrogen-menu-accessibility-test";
+
+// If this variable is used, it's important to leverage the $ROOT variable in your Twig files to ensure your assets and application links work properly when deployed.
+
+// $ROOT = /subdirectory..
+// e.g. <link async href="$ROOT/css/app.css" rel="stylesheet"> turns into <link async href="/subdirectory/css/app.css" rel="stylesheet">
+// href="$ROOT/img/image.jpg" turns into href="/subdirectory/img/image.jpg"
+
 // Requirements
 const { series, parallel, src, dest, watch } = require('gulp');
+const replace = require('gulp-replace');
 const autoprefixer = require('autoprefixer');
 const browsersync = require('browser-sync').create();
 const del = require('del');
@@ -72,8 +84,14 @@ sass.compiler = require('sass');
         return del('cache/**/*')
     }
 
+    function replacePath() {
+        return src('cache/**/*.html')
+        .pipe(replace('$ROOT', ""))
+        .pipe(dest('cache'));
+    }
+
     // TestScript
-    const testScript = series(cleanCache, moveTestHTML, moveTestSass, moveTestJS, moveCash, moveH2TestJS, moveTestComponentJS, moveImages, moveDevFavicons, compileTestSass);
+    const testScript = series(cleanCache, moveTestHTML, replacePath, moveTestSass, moveTestJS, moveCash, moveH2TestJS, moveTestComponentJS, moveImages, moveDevFavicons, compileTestSass);
 
     // Watch
     function watchTestFiles() {
@@ -163,9 +181,23 @@ sass.compiler = require('sass');
         return del('app.scss');
     }
 
+    let rootPath = "/" + urlPrefix;
+    function replaceDocsPath() {
+        if (urlPrefix == "") {
+            return src('docs/**/*.html')
+            .pipe(replace('$ROOT', ""))
+            .pipe(dest('docs'));
+        } else {
+            return src('docs/**/*.html')
+            .pipe(replace('$ROOT', rootPath))
+            .pipe(dest('docs'));
+        }
+    }
+
     exports.build = series(
         cleanDocs, 
         moveDocsHTML,
+        replaceDocsPath,
         moveDocsSass,
         moveDocsJS,
         moveDocsCash,
