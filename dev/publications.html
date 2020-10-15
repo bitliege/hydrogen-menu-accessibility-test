@@ -3,7 +3,7 @@
     <head>
 
         <!-- Site Title -->
-        <title>H2: Menu Test</title>
+        <title>H2: Menu Test - Publications</title>
         <!-- Site Description -->
         <meta name="description" content="Hydrogen is an open-source, modular component library and CSS utility.">
         <!-- Charset -->
@@ -14,18 +14,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/hydrogen-menu-accessibility-test/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/hydrogen-menu-accessibility-test/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/hydrogen-menu-accessibility-test/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/hydrogen-menu-accessibility-test/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/hydrogen-menu-accessibility-test/favicons/safari-pinned-tab.svg" color="#c59fff">
-        <link rel="shortcut icon" href="/hydrogen-menu-accessibility-test/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="$ROOT/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="$ROOT/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="$ROOT/favicons/favicon-16x16.png">
+        <link rel="manifest" href="$ROOT/favicons/site.webmanifest">
+        <link rel="mask-icon" href="$ROOT/favicons/safari-pinned-tab.svg" color="#c59fff">
+        <link rel="shortcut icon" href="$ROOT/favicons/favicon.ico">
         <meta name="msapplication-TileColor" content="#c59fff">
-        <meta name="msapplication-config" content="/hydrogen-menu-accessibility-test/favicons/browserconfig.xml">
+        <meta name="msapplication-config" content="$ROOT/favicons/browserconfig.xml">
         <meta name="theme-color" content="#c59fff">
 
         <!-- CSS -->
-        <link async rel="stylesheet" href="/hydrogen-menu-accessibility-test/app.css">
+        <link async rel="stylesheet" href="$ROOT/app.css">
         <link rel="stylesheet" href="https://use.typekit.net/iep7euw.css">
         
     </head>
@@ -52,20 +52,19 @@
                     role="menu">
                     <li role="presentation">
                         <a 
-                            aria-current="page"
-                            href="/hydrogen-menu-accessibility-test/" 
+                            href="$ROOT/" 
                             role="menuitem" 
                             title="Return to the test homepage.">Home</a>
                     </li>
                     <li role="presentation">
                         <a 
-                            href="#about" 
+                            href="$ROOT/#about" 
                             role="menuitem" 
                             title="Learn more about the test.">About Us</a>
                     </li>
                     <li role="presentation">
                         <a 
-                            href="#team" 
+                            href="$ROOT/#team" 
                             role="menuitem" 
                             title="Learn more about our team.">Our Team</a>
                     </li>
@@ -73,7 +72,8 @@
                         <a 
                             aria-expanded="false"
                             aria-haspopup="true"
-                            href="/hydrogen-menu-accessibility-test/publications.html" 
+                            aria-current="page"
+                            href="$ROOT/publications.html" 
                             role="menuitem" 
                             title="View a list of publications about the test.">
                             Publications</a>
@@ -93,14 +93,14 @@
                             role="menu">
                             <li role="presentation">
                                 <a 
-                                    href="/hydrogen-menu-accessibility-test/publications.html#2020" 
+                                    href="$ROOT/publications.html#2020" 
                                     role="menuitem" 
                                     tabindex="-1" 
                                     title="View publications from 2020">2020</a>
                             </li>
                             <li role="presentation">
                                 <a 
-                                    href="/hydrogen-menu-accessibility-test/publications.html#2019" 
+                                    href="$ROOT/publications.html#2019" 
                                     role="menuitem" 
                                     tabindex="-1" 
                                     title="View publications from 2019.">2019</a>
@@ -109,7 +109,7 @@
                                 <a 
                                     aria-expanded="false"
                                     aria-haspopup="true"
-                                    href="/hydrogen-menu-accessibility-test/publications.html#2018" 
+                                    href="$ROOT/publications.html#2018" 
                                     role="menuitem" 
                                     tabindex="-1" 
                                     title="View publications from 2018.">2018</a>
@@ -130,21 +130,21 @@
                                     role="menu">
                                     <li role="presentation">
                                         <a 
-                                            href="/hydrogen-menu-accessibility-test/2018/design-mistakes.html" 
+                                            href="$ROOT/2018/design-mistakes.html" 
                                             role="menuitem" 
                                             tabindex="-1" 
                                             title="">10 Design Mistakes Made by Beginners</a>
                                     </li>
                                     <li role="presentation">
                                         <a 
-                                            href="/hydrogen-menu-accessibility-test/2018/nav-accessibility.html" 
+                                            href="$ROOT/2018/nav-accessibility.html" 
                                             role="menuitem" 
                                             tabindex="-1" 
                                             title="">Navigation Accessibility Practices</a>
                                     </li>
                                     <li role="presentation">
                                         <a 
-                                            href="/hydrogen-menu-accessibility-test/2018/standardized-web.html" 
+                                            href="$ROOT/2018/standardized-web.html" 
                                             role="menuitem" 
                                             tabindex="-1" 
                                             title="">Working Towards a Standardized Web</a>
@@ -153,7 +153,7 @@
                             </li>
                             <li role="presentation">
                                 <a 
-                                    href="/hydrogen-menu-accessibility-test/publications.html#2017" 
+                                    href="$ROOT/publications.html#2017" 
                                     role="menuitem" 
                                     tabindex="-1" 
                                     title="View publications from 2017.">2017</a>
@@ -173,27 +173,33 @@
                 <div 
                     data-h2-container="mqb(center, medium)"
                     data-h2-padding="mqb(top, 3)">
-                    <h1>Welcome to the test.</h1>
+                    <h1>Publications</h1>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
-                    <h2 id="about" data-h2-padding="mqb(top, 3)">About Us</h2>
+                    <h2 id="2020" data-h2-padding="mqb(top, 3)">Publications from 2020</h2>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
+                    <h2 id="2019" data-h2-padding="mqb(top, 3)">Publications from 2019</h2>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
+                    <h2 id="2018" data-h2-padding="mqb(top, 3)">Publications from 2018</h2>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
-                    <h2 id="team" data-h2-padding="mqb(top, 3)">Our Team</h2>
-                    <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
+                    <ul>
+                        <li><a href="$ROOT/2018/design-mistakes.html" title="Read 10 Design Mistakes Made by Beginners">10 Design Mistakes Made by Beginners</a></li>
+                        <li><a href="$ROOT/2018/nav-accessibility.html" title="Read Navigation Accessibility Practices">Navigation Accessibility Practices</a></li>
+                        <li><a href="$ROOT/2018/standardized-web.html" title="Read Working Towards a Standardized Web">Working Towards a Standardized Web</a></li>
+                    </ul>
+                    <h2 id="2017" data-h2-padding="mqb(top, 3)">Publications from 2017</h2>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                     <p data-h2-margin="mqb(bottom, 1)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem cumque eaque dicta obcaecati, assumenda perferendis corrupti. Sit, vitae ipsum similique beatae consectetur ex repudiandae quibusdam quia numquam! Provident, sit?</p>
                 </div>
             </main>
         </div>
-        <script src="/hydrogen-menu-accessibility-test/cash.min.js"></script>
-        <script src="/hydrogen-menu-accessibility-test/h2-system.min.js"></script>
-        <script src="/hydrogen-menu-accessibility-test/app.js"></script>
+        <script src="$ROOT/cash.min.js"></script>
+        <script src="$ROOT/h2-system.min.js"></script>
+        <script src="$ROOT/app.js"></script>
     </body>
 </html>

@@ -30,7 +30,7 @@ sass.compiler = require('sass');
 
         // Move Test HMTL
         function moveTestHTML() {
-            return src(["dev/index.html", "dev/sidebar.html", "dev/topbar.html"])
+            return src(["dev/**/*.html"])
             .pipe(dest("cache"));
         }
         // Move Test Sass
@@ -122,7 +122,7 @@ sass.compiler = require('sass');
 
         // Move Test HMTL
         function moveDocsHTML() {
-            return src(["dev/index.html", "dev/sidebar.html", "dev/topbar.html"])
+            return src(["dev/**/*.html"])
             .pipe(dest("docs"));
         }
         // Move Test Sass
